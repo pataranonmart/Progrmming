@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="SP_ONE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2562-08-04 03:48:59 PM"/>
+        <attribute name="created" value="U1BfT05FO0RFU0tUT1AtREhGSTlTUTsyNTYyLTA4LTA0OzEyOjQxOjEzIFBNOzI4NTQ="/>
+        <attribute name="edited" value="U1BfT05FO0RFU0tUT1AtREhGSTlTUTsyNTYyLTA4LTA0OzAzOjQ4OjU5IFBNOzI7Mjk4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username" type="String" array="False" size=""/>
+            <declare name="password" type="String" array="False" size=""/>
+            <input variable="username"/>
+            <input variable="password"/>
+            <if expression="user==&quot;mart&quot;">
+                <then>
+                    <if expression="password==&quot;1234&quot;">
+                        <then>
+                            <output expression="&quot;1. &#3609;&#3657;&#3629;&#3591;&#3648;&#3592;&#3609;&#3585;&#3619;&#3632;&#3604;&#3634;&#3609; 1000 THB&quot;" newline="True"/>
+                            <output expression="&quot;2. &#3609;&#3657;&#3629;&#3591;&#3592;&#3633;&#3591;&#3618;&#3634;&#3623;&#3651;&#3627;&#3597;&#3656;  1500 THB&quot;" newline="True"/>
+                            <output expression="&quot;3. &#3609;&#3657;&#3629;&#3591;&#3650;&#3617;&#3657;&#3588;&#3609;&#3617;&#3650;&#3605; 2000 THB&quot;" newline="True"/>
+                            <output expression="&quot;4. &#3609;&#3657;&#3629;&#3591;&#3617;&#3636;&#3657;&#3623;&#3586;&#3634;&#3623;&#3651;&#3627;&#3597;&#3656; 3500 THB&quot;" newline="True"/>
+                            <output expression="&quot;5. &#3609;&#3657;&#3629;&#3591;&#3617;&#3634;&#3618;&#3629;&#3617;&#3648;&#3585;&#3656;&#3591; 4000 THB&quot;" newline="True"/>
+                            <declare name="mart" type="Integer" array="False" size=""/>
+                            <declare name="num" type="Integer" array="False" size=""/>
+                            <declare name="result" type="Integer" array="False" size=""/>
+                            <output expression="&quot;What do you want?&quot;" newline="True"/>
+                            <input variable="mart"/>
+                            <output expression="&quot;How many hours do you want&quot;" newline="True"/>
+                            <input variable="num"/>
+                            <if expression="mart==1">
+                                <then>
+                                    <assign variable="result" expression="num*1000"/>
+                                    <output expression="&quot;You order hours with &#3609;&#3657;&#3629;&#3591;&#3648;&#3592;&#3609;&#3585;&#3619;&#3632;&#3604;&#3634;&#3609; 1000  THB&quot;" newline="False"/>
+                                </then>
+                                <else>
+                                    <if expression="mart==2">
+                                        <then>
+                                            <assign variable="result" expression="num*1500"/>
+                                            <output expression="&quot;You order hours with &#3609;&#3657;&#3629;&#3591;&#3592;&#3633;&#3591;&#3618;&#3634;&#3623;&#3651;&#3627;&#3597;&#3656; 1500  THB&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="mart==3">
+                                                <then>
+                                                    <assign variable="result" expression="num*2000"/>
+                                                    <output expression="&quot;You order hours with &#3609;&#3657;&#3629;&#3591;&#3650;&#3617;&#3657;&#3588;&#3609;&#3617;&#3650;&#3605; 2000  THB&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="mart==4">
+                                                        <then>
+                                                            <assign variable="result" expression="num*3500"/>
+                                                            <output expression="&quot;You order hours with &#3609;&#3657;&#3629;&#3591;&#3617;&#3636;&#3657;&#3623;&#3586;&#3634;&#3623;&#3651;&#3627;&#3597;&#3656; 3500  THB&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="mart==5">
+                                                                <then>
+                                                                    <assign variable="result" expression="num*4000"/>
+                                                                    <output expression="&quot;You order hours with &#3609;&#3657;&#3629;&#3591;&#3617;&#3634;&#3618;&#3629;&#3617;&#3648;&#3585;&#3656;&#3591; 4000  THB&quot;" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Error I quay.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Error I quay.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
